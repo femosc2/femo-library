@@ -1,10 +1,13 @@
 import Image from 'next/image'
 import styles from '../../page.module.css'
+import Layout from '@/app/layout'
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      Stacking Cards
-    </main>
-  )
+export default function Page() {
+    return (
+        <main className={styles.main}>
+            <Layout>
+                Stacking cards
+            </Layout>
+        </main>
+    )
 }
