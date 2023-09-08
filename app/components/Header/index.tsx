@@ -12,15 +12,14 @@ const Header = () => {
             <h1>Femo Library</h1>
             <hr />
             <StyledLinks>
-                <StyledSectionHeader onClick={() => setActiveHeader(activeHeader === "animations" ? "" : "animations")} isactive={activeHeader === 'animations'}>
+                <StyledSectionHeader onMouseEnter={() => setActiveHeader("animations")} onMouseLeave={() => setActiveHeader("")} isactive={activeHeader === 'animations'}>
                     <StyledLink>Animations</StyledLink>
                     <StyledSectionBody>
                         <StyledLink><Link href={'/animations/horizontal-side'}>Horizontal Side Scrolling</Link></StyledLink>
                         <StyledLink><Link href={'/animations/stacking-cards'}>Stacking Cards</Link></StyledLink>
-
                     </StyledSectionBody>
                 </StyledSectionHeader>
-                <StyledSectionHeader onClick={() => setActiveHeader(activeHeader === "components" ? "" : "components")} isactive={activeHeader === 'components'}>
+                <StyledSectionHeader onMouseEnter={() => setActiveHeader("components")} onMouseLeave={() => setActiveHeader("")} isactive={activeHeader === 'components'}>
                     <StyledLink>Components</StyledLink>
                     <StyledSectionBody>
                     </StyledSectionBody>
