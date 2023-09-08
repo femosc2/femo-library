@@ -1,10 +1,12 @@
-import Image from 'next/image'
 import styles from '../../page.module.css'
+import Layout from '@/app/layout'
 
-export default function Home() {
+export default function Page() {
   return (
     <main className={styles.main}>
-      horizontal-side
+      <Layout>
+        horizontal-side
+      </Layout>
     </main>
   )
 }
