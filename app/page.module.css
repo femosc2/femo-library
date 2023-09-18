@@ -1,6 +1,10 @@
-.main {
+.section {
   display: flex;
   flex-direction: row;
+  background-color: #2a3333;
   min-height: 100vh;
+}
+
+.layout {
   background-color: #2a3333;
 }
