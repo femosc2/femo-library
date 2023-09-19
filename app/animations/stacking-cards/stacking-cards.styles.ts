@@ -9,7 +9,7 @@ const scale = keyframes`
 `;
 
 // Define Card styled component
-export const StyledCard = styled.li<{index: number, scroll: number, numberofcards: number, centerIndex: number}>`
+export const StyledCard = styled.li<{ index: number, scroll: number, numberofcards: number, centerIndex: number }>`
   height: 400px;
   background-color: ${props => props.index === props.centerIndex ? "green" : "red"};
   margin: 0 auto;
@@ -20,12 +20,12 @@ export const StyledCard = styled.li<{index: number, scroll: number, numberofcard
   border-radius: 25px;
   box-shadow: -1px -1px 17px 0px rgba(0,0,0,0.43);
   top: ${props => props.index * 25}px;
-  transform: scale(${props => 0.85 + 0.15 * Math.exp(-Math.pow((props.index - props.centerIndex), 2) / (2 * 1))});
+  transform: scale(${props => 0.80 + 0.20 * Math.exp(-Math.pow((props.index - props.centerIndex), 2) / (2 * 1))});
   transition: 1s;
 `;
 
 // Define CardsContainer styled component
-export const StyledCardsContainer = styled.ul<{numberofcards: number}>`
+export const StyledCardsContainer = styled.ul<{ numberofcards: number }>`
   border: 5px solid pink;
   width: 80%;
   margin: 0 auto;
