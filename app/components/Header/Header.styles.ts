@@ -11,10 +11,11 @@ export const StyledHeader = styled.header`
     box-shadow: 7px 0px 40px 3px rgba(0,0,0,0.31);
     font-size: 35px;
     height: 100vh;
-    position: absolute;
     left: 0;
     top: 0;
     color: white;
+    height: 100vh;
+    position: fixed;
 `
 
 export const StyledLinks = styled.ul`
